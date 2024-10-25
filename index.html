@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodopia</title>
+    <link rel="stylesheet" href="begin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="hero">
+        <div class="navbar">
+            <h>Youtube Stats Manager</h>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+            <div class="icon">
+                <a href="signin.html">Sign In</a>
+                <img src="menu.png" >
+            </div>
+
+        </div>
+        <div class="grid-container">
+            <button class="arrow left" onclick="moveGrid(-1)">&#10094;</button>
+            <div class="grid">
+                <div class="grid-item active" id="1">
+                    <h1>Average User Visited per day</h1>
+                    <img src="profile.jpeg">
+                    <p>200</p>
+                </div>
+                <div class="grid-item" id="2">
+                    <h1>Revenue generated last month</h1>
+                    <img src="cash.png">
+                    <p>25000</p>
+
+                </div>
+                <div class="grid-item" id="3" >
+                    <h1>Average of likes per day</h1>
+                    <img src="likes.png">
+                    <p>2500</p>
+                </div>
+                <div class="grid-item" id="4">
+                    <h1>Average of subscribers per day</h1>
+                    <img src="sub.png">
+                    <p>3000</p>
+                </div>
+                <div class="grid-item" id="5">
+                    <h1>Average of orders per day</h1>
+                    <img src="order.png">
+                    <p>200</p>
+                </div>
+            </div>
+            <button class="arrow right" onclick="moveGrid(1)">&#10095;</button>
+        </div>
+        <div class="banner">
+            <div class="left">
+                
+                    
+                  
+        
+                <!-- Charts Section -->
+                <div class="charts-container">
+                    <!-- Revenue Chart -->
+                    <div class="chart-card">
+                        <h3>Revenue Over Time</h3>
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                    
+        
+                    
+                </div>
+
+            </div>
+                
+            <div class="right">
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <h3>Sales Performance</h3>
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <div class="banner">
+            <div class="left">
+                <div class="charts-container" align-items="centre">
+                    <div class="content"><h>Product Wise Sales</h></div>
+                    <canvas id="myPieChart"></canvas>
+                </div>
+                
+
+            </div>
+                
+            <div class="right">
+                <div class="charts-container">
+                    <div class="content"><h>Budjet Analysis</h></div>
+                    <canvas id="myDoughnutChart"></canvas>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="title">Country Wise Distribution of Subscribers</div>
+        <div class="map" id="map"></div>
+    
+    </div>
+    
+    
+    <footer>
+        <p>Connect With Us</p>
+        <ul>
+            <li><img src="facebook.png"><h>Facebook</h></li>
+            <li><img src="instagram (1).png"><h>Instagram</h></li>
+            <li><h>Contact:+91 3486459078</h></li>
+        </ul>
+    </footer>
+    
+    <script src="begin.js"></script>
+    
+</body>
+</html>
